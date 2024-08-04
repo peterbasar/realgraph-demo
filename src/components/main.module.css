@@ -1,25 +1,35 @@
-.header {
+.section-intro-header {
   text-align: center;
   width: 100%;
-  padding: 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
   text-wrap: balance;
 }
 
-.package-description {
-  font-weight: 400;
+.section-intro-package-name {
+  margin: 16px 16px 0px 16px;
+  font-weight: 900;
+  font-size: 1.5rem;
 }
 
-.package-install-wrapper {
+.section-intro-package-description {
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+
+.section-intro-package-install-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  list-style: none;
 }
-.package-install {
+
+.section-intro-package-install {
   padding: 16px;
   border: 1px dashed black;
 }
@@ -34,49 +44,89 @@
   justify-content: space-between;
   align-items: stretch;
 }
+
 .section-intro-example {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 16px;
+  gap: 32px;
   padding: 32px;
 }
 
-.graph-example-container {
+.section-extra {
+  background-color: #f5f5f5;
+  padding: 32px 0;
+}
+
+.section-extra-title {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.graph-example {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.graph-example-content {
   overflow: auto;
   display: flex;
   gap: 32px;
   padding: 16px;
   justify-content: center;
 }
+
 .graph-example-code-wrapper {
   width: 300px;
   border: 1px dashed black;
   padding: 16px;
   overflow: auto;
 }
+
 @media only screen and (max-width: 800px) {
-  .graph-example-container {
+  .graph-example-content {
     flex-direction: column;
     align-items: stretch;
+    justify-content: center;
   }
+
   .graph-example-code-wrapper {
+    width: 400px;
     width: auto;
     max-height: 300px;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .graph-example-code-wrapper {
+    width: 300px;
   }
 }
 
 .graph-example-code {
-  white-space: pre-wrap;
+  white-space: pre;
+  display: block;
+  word-break: keep-all;
+  width: fit-content;
   overflow: auto;
+  font-size: 0.75rem;
 }
 
 .graph-example-graph {
   border: 1px dashed black;
+  display: flex;
+  justify-content: center;
 }
 
 .github-link {
   text-align: center;
   padding: 64px;
+  font-size: 1rem;
+  font-weight: 300;
 }
