@@ -34,6 +34,12 @@ export default function ExampleB() {
               <br />
               {'      interval={100} // Delay between callbacks in milliseconds'}
               <br />
+              {'      interval={100} // Delay between callbacks in milliseconds'}
+              <br />
+              {'      axisXSectionCount={1} // Number of sections on X axis'}
+              <br />
+              {'      axisYSectionCount={6} // Number of sections on Y axis'}
+              <br />
               {'      width={width} // Manually set graph width'}
               <br />
               {'      height={height} // Manually set graph height'}
@@ -56,6 +62,7 @@ export default function ExampleB() {
               count={50}
               interval={100}
               axisYSectionCount={6}
+              axisXSectionCount={1}
             />
           </div>
         </div>
