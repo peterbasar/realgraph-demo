@@ -10,7 +10,7 @@ export default function ExampleB() {
         <h3 className={styles['section-extra-title']}>Example B: Sine function</h3>
         <div className={styles['graph-example-content']}>
           <div className={styles['graph-example-code-wrapper']}>
-            <code className={styles['graph-example-code']}>
+            <div className={styles['graph-example-code']}>
               {`import Graph from 'realgraph'`}
               <br />
               <br />
@@ -49,7 +49,7 @@ export default function ExampleB() {
               {'  )'}
               <br />
               {'}'}
-            </code>
+            </div>
           </div>
 
           <div className={styles['graph-example-graph']}>

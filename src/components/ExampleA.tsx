@@ -27,7 +27,7 @@ export default function ExampleA() {
           <h3 className={styles['section-extra-title']}>Example A: Basic</h3>
           <div className={styles['graph-example-content']}>
             <div className={styles['graph-example-code-wrapper']}>
-              <code className={styles['graph-example-code']}>
+              <div className={styles['graph-example-code']}>
                 {`import Graph from 'realgraph'`}
                 <br />
                 <br />
@@ -46,7 +46,7 @@ export default function ExampleA() {
                 {'  )'}
                 <br />
                 {'}'}
-              </code>
+              </div>
             </div>
 
             <div className={styles['graph-example-graph']}>

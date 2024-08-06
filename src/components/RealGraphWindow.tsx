@@ -15,7 +15,7 @@ function RealGraphWindow(params: GraphI) {
     return () => window.removeEventListener('resize', updateWidth)
   })
 
-  if (windowWidth > 600) {
+  if (windowWidth > 800) {
     return <Graph {...params} width={300} height={300} />
   } else {
     return <Graph {...params} width={180} height={300} />
