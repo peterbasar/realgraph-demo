@@ -18,7 +18,7 @@
 .section-intro-package-description {
   font-size: 16px;
   font-weight: 300;
-  padding: 0;
+  padding: 0 16px;
   margin: 0;
 }
 
@@ -30,6 +30,7 @@
 }
 
 .section-intro-package-install {
+  text-align: center;
   padding: 16px;
   border: 1px dashed black;
 }
