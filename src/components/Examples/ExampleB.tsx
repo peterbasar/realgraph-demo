@@ -1,11 +1,10 @@
 'use client'
-import styles from './main.module.css'
+import styles from '@/components/main.module.css'
 import RealGraph from '@/components/RealGraphWindow'
-import Link from 'next/link'
 
 export default function ExampleB() {
   return (
-    <section className={styles['section-extra']}>
+    <section className={`${styles['section-extra']} ${styles['section-bg-dark']}`}>
       <div className={styles['graph-example']}>
         <h3 className={styles['section-extra-title']}>Example B: Sine function</h3>
         <div className={styles['graph-example-content']}>

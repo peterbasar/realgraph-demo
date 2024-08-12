@@ -1,11 +1,12 @@
-import ExampleA from '@/components/ExampleA'
-import ExampleB from '@/components/ExampleB'
+import { ExampleA, ExampleB, ExampleC, ExampleD } from '@/components/Examples'
 
 export default function Home() {
   return (
     <main>
       <ExampleA />
       <ExampleB />
+      <ExampleC />
+      <ExampleD />
     </main>
   )
 }

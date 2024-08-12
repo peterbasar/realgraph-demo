@@ -1,10 +1,11 @@
 'use client'
-import { useEffect, useState } from 'react'
-import Graph, { GraphI } from 'realgraph'
-import dynamic from 'next/dynamic'
+import { ForwardedRef, useEffect, useState, forwardRef, RefObject } from 'react'
+import Graph, { graphExportRefI, GraphI } from 'realgraph'
 
-function RealGraphWindow(params: GraphI) {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+function RealGraphWindow({ ...params }: GraphI, ref: ForwardedRef<graphExportRefI>) {
+  const [windowWidth, setWindowWidth] = useState(
+    typeof window !== 'undefined' ? window.innerWidth : 1366,
+  )
 
   const updateWidth = () => {
     setWindowWidth(window.innerWidth)
@@ -16,12 +17,10 @@ function RealGraphWindow(params: GraphI) {
   })
 
   if (windowWidth > 800) {
-    return <Graph {...params} width={300} height={300} />
+    return <Graph ref={ref} {...params} width={300} height={300} />
   } else {
-    return <Graph {...params} width={180} height={300} />
+    return <Graph ref={ref} {...params} width={180} height={300} />
   }
 }
 
-export default dynamic(() => Promise.resolve(RealGraphWindow), {
-  ssr: false,
-})
+export default forwardRef(RealGraphWindow)
