@@ -142,3 +142,27 @@
   font-size: 16px;
   font-weight: 300;
 }
+
+.graph-example-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 16px;
+}
+
+.graph-button {
+  background-color: white;
+  border: 1px solid black;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.graph-button:hover {
+  background-color: rgb(244, 244, 244);
+}
+
+.graph-button:active {
+  transform: translateY(1px);
+}

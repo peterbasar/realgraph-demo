@@ -1,4 +1,4 @@
-import { ExampleA, ExampleB, ExampleC, ExampleD } from '@/components/Examples'
+import { ExampleA, ExampleB, ExampleC, ExampleD, ExampleE } from '@/components/Examples'
 
 export default function Home() {
   return (
@@ -7,6 +7,7 @@ export default function Home() {
       <ExampleB />
       <ExampleC />
       <ExampleD />
+      <ExampleE />
     </main>
   )
 }
