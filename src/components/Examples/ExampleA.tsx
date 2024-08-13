@@ -56,9 +56,13 @@ export default function ExampleA() {
         </div>
       </div>
 
-      <code className={styles['github-link']}>
-        <Link href="https://github.com/peterbasar/realgraph">{'<code />'}</Link>
-      </code>
+      <div className={styles['bottom-info']}>
+        <code className={styles['github-link']}>
+          <Link href="https://github.com/peterbasar/realgraph">{'<code />'}</Link>
+        </code>
+
+        <p className={styles['more-examples-info']}>↓ more examples ↓</p>
+      </div>
     </section>
   )
 }
