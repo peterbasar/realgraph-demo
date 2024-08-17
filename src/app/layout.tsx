@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Realgraph demo',
+  title: 'realgraph',
   description: 'Demo page for realgraph npm package',
 }
 
