@@ -49,7 +49,7 @@ export default function ExampleE() {
               <br />
               {`      >`}
               <br />
-              {`        Log points`}
+              {`        Console log points`}
               <br />
               {`      </button>`}
               <br />
@@ -117,7 +117,7 @@ export default function ExampleE() {
               if (ref && ref.current) console.log('points', ref.current.getPoints())
             }}
           >
-            Log points
+            Log points to console
           </button>
           <button
             className={styles['graph-button']}
