@@ -10,7 +10,7 @@ export default function ExampleA() {
         <h1 className={styles['section-intro-package-name']}>realgraph</h1>
 
         <h4 className={styles['section-intro-package-description']}>
-          real time graph data visualization library for React
+          realtime graph data visualization library for React
         </h4>
       </header>
 
@@ -57,11 +57,20 @@ export default function ExampleA() {
       </div>
 
       <div className={styles['bottom-info']}>
-        <code className={styles['github-link']}>
-          <Link href="https://github.com/peterbasar/realgraph">{'<code />'}</Link>
-        </code>
+        <div className={styles['bottom-info-code-links']}>
+          <code className={styles['bottom-info-github-link']}>
+            <Link target="_blank" href="https://github.com/peterbasar/realgraph">
+              {'<package />'}
+            </Link>
+          </code>
+          <code className={styles['bottom-info-github-link']}>
+            <Link target="_blank" href="https://github.com/peterbasar/realgraph-demo">
+              {'<this page />'}
+            </Link>
+          </code>
+        </div>
 
-        <p className={styles['more-examples-info']}>↓ more examples ↓</p>
+        <p className={styles['bottom-info-more-examples-info']}>↓ more examples ↓</p>
       </div>
     </section>
   )
