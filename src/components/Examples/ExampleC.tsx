@@ -33,7 +33,7 @@ export default function ExampleC() {
         <div className={styles['graph-example-content']}>
           <div className={styles['graph-example-code-wrapper']}>
             <div className={styles['graph-example-code']}>
-              {`import { useEffect, useState } from 'react''`}
+              {`import { useEffect, useState } from 'react'`}
               <br />
               {`import Graph from 'realgraph'`}
               <br />
