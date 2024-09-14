@@ -1,6 +1,6 @@
 {
   "name": "realgraph-demo",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "author": "Peter Basar (peterbasar.com)",
   "license": "MIT",
   "private": true,
@@ -16,7 +16,7 @@
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
-    "realgraph": "^0.1.1"
+    "realgraph": "^0.1.3"
   },
   "devDependencies": {
     "@types/node": "^20",
