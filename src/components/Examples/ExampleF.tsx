@@ -6,7 +6,7 @@ import { styleB } from '../Styles'
 
 export default function ExampleF() {
   return (
-    <section className={`${styles['section-extra']}`}>
+    <section className={`${styles['section-extra']} ${styles['section-bg-dark']}`}>
       <div className={styles['graph-example']}>
         <h3 className={styles['section-extra-title']}>Example F: Custom style</h3>
         <div className={styles['graph-example-content']}>
