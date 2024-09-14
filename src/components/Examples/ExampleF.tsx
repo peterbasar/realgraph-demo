@@ -8,7 +8,7 @@ export default function ExampleF() {
   return (
     <section className={`${styles['section-extra']}`}>
       <div className={styles['graph-example']}>
-        <h3 className={styles['section-extra-title']}>Example E: Custom style</h3>
+        <h3 className={styles['section-extra-title']}>Example F: Custom style</h3>
         <div className={styles['graph-example-content']}>
           <div className={styles['graph-example-code-wrapper']}>
             <div className={styles['graph-example-code']}>
