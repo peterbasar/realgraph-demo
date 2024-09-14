@@ -124,6 +124,7 @@
   border: 1px dashed black;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .bottom-info {
